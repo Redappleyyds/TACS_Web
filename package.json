@@ -8,6 +8,6 @@
   },
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch --minify",
-    "bulid": "npx tailwindcss -o build.css --minify"
+    "bulid": "npx tailwindcss -o ./src/output.css --minify"
   }
 }
