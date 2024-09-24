@@ -1,16 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body,
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-* {
-  font-family: "MiSans VF", MiSans, system-ui, sans-serif;
-}
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Based on: https://codepen.io/nickelse/pen/YGPJQG
     Influenced by: https://sproutsocial.com/
@@ -19,14 +6,12 @@ html {
 
   /* #Mega Menu Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .mega-menu {
-    display: block;
-    opacity: 0;
-    pointer-events: none;
-    right: 0;
-    top: 100%;
+  #mega-menu {
+    display: none;
+    left: 0;
     position: absolute;
-    width: fit-content;
+    text-align: left;
+    width: 100%;
   }
 
   /* #toggle Class Styles
@@ -34,28 +19,35 @@ html {
 
   .toggleable > label:after {
     content: "\25BC";
-  } 
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
 
   .toggle-input {
+    display: block;
+  }
+  .toggle-input #mega-menu{
+    display: block;
+  }
+  .toggle-input:not(checked) ~ #mega-menu {
     display: none;
   }
-  .toggle-input ~ label .mega-menu{
-    opacity: 0;
-  }
-  .toggle-input:not(checked) ~ label .mega-menu {
-    opacity: 0;
-  }
 
-  .toggle-input:checked ~ label .mega-menu {
-    opacity: 1;
+  .toggle-input:checked ~ #mega-menu {
+    display: block;
   }
 
   .toggle-input:checked + label {
     color: white;
-    background: #374151; /*@apply bg-blue-800 */
-    pointer-events: all;
+    background: #2c5282; /*@apply bg-blue-800 */
   }
 
   .toggle-input:checked ~ label:after {
     content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
   }
