@@ -20,13 +20,10 @@ html {
   /* #Mega Menu Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .mega-menu {
-    display: block;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
     right: 0;
     top: 100%;
     position: absolute;
-    width: fit-content;
   }
 
   /* #toggle Class Styles
@@ -40,20 +37,18 @@ html {
     display: none;
   }
   .toggle-input ~ label .mega-menu{
-    opacity: 0;
+    display: none;
   }
   .toggle-input:not(checked) ~ label .mega-menu {
-    opacity: 0;
+    display: none;
   }
-
   .toggle-input:checked ~ label .mega-menu {
-    opacity: 1;
+    display: block;
   }
 
   .toggle-input:checked + label {
     color: white;
     background: #374151; /*@apply bg-blue-800 */
-    pointer-events: all;
   }
 
   .toggle-input:checked ~ label:after {
