@@ -9,7 +9,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 * {
-  font-family: "MiSans VF", MiSans, system-ui, sans-serif;
+  font-family: 'SF Pro SC', system-ui, sans-serif;
 }
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
     Based on: https://codepen.io/nickelse/pen/YGPJQG
@@ -54,3 +54,6 @@ html {
   .toggle-input:checked ~ label:after {
     content: "\25B2";
   }
+
+  /* #Apple Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
