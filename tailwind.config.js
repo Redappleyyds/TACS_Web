@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+        "origin": "0px 0px 16px 0px rgba(0, 0, 0, 0.3)",
       },
     },
     fontFamily: { // https://github.com/system-fonts/modern-font-stacks

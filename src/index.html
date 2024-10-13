@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans" class="font-systemui">
 
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="这是TACS茶水晶的官方网站, 全程:Tea Amethyst Craft Server. 包含了TACS服务器简介, 加入方式, 画廊, 还有友情链接." />
   <title>TAC-Server</title>
-  <link rel="icon" type="image/png" href="tacs.svg" />
+  <link rel="icon" type="image/png" href="./images/tacs.svg" />
   <link rel="stylesheet" href="./output.css" />
   <!-- <link rel="stylesheet"
     href="https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&amp;display=swap"
@@ -20,7 +20,7 @@
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
-            <img class="size-12 my-auto" src="tacs.svg" alt="Logo">
+            <img class="size-12 my-auto" src="./images/tacs.svg" alt="TACS Logo">
           </div>
             <ul class="flex">
               <li>
@@ -62,7 +62,7 @@
   <!-- 导航栏 -->
 
   <section
-    class="flex items-center justify-center h-screen sm:bg-[url('https://img.fastmirror.net/s/2024/10/05/67013db185987.png')] bg-fixed bg-center bg-cover bg-[#0f0f0f] bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30%"
+    class="flex items-center justify-center h-screen sm:bg-[url('https://img.fastmirror.net/s/2024/10/05/67013db185987.png')] bg-center bg-cover bg-[#0f0f0f] bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30%"
     id="intro">
     <div class="m-8 flex items-center justify-center">
       <div
@@ -83,40 +83,50 @@
 
           <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" rel="noopener norefferrer"
             class="m-1 mx-2 block w-40 rounded-full border-2 border-[#2d4ccb] p-2 text-center text-2xl text-white transition ease-out hover:cursor-pointer hover:bg-[#1a2a6d]">查看Wiki
-            <svg class="h-6 w-6 inline fill-current" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">
-              <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path>
-              <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon>
-            </svg></a>
+            <img class="inline size-4" src="./images/link_arrow.svg"></a>
         </div>
 
         <a href="#more" class="select-none [font-size:0px]">查看更多<img
-            src="arrow.svg" alt=""
+            src="./images/arrow.svg" alt=""
             class="mx-auto size-12 rounded-full shadow-[0_0px_50px_-12px_#ffffff] transition duration-300 ease-in-out animate-bounce" /></a>
       </div>
     </div>
   </section>
   <section class="bg-[#121317]">
-    <p class="pt-6 text-center text-2xl font-medium text-white" id="more">
+    <h1 class="pt-8 text-center text-2xl font-medium text-white">
+      服务器宣传片
+    </h1>
+    <div class="flex sm:flex-row flex-col justify-center items-center p-2 sm:p-4 md:p-2 lg:p-6">
+      <a class="text-white hover:underline hover:text-blue-500 rounded-2xl relative m-4 hover:scale-105 transition ease-out hover:shadow-[#2d446e] hover:shadow-origin" href="https://www.bilibili.com/video/BV1XhtxeREND" target="_blank">
+        <img class="sm:w-[40vw] lg:w-[30vw] w-[80vw] rounded-[inherit]" src="./images/cover2.png">
+        <img class="absolute bottom-1 right-1 p-1 rounded-full bg-black/30 pointer-events-none" width="32" src="./images/link_arrow.svg">
+      </a>
+      <a class="text-white hover:underline hover:text-blue-500 rounded-2xl relative m-4 hover:scale-105 transition ease-out hover:shadow-[#6626c4] hover:shadow-origin" href="https://www.bilibili.com/video/BV1phtPejESn" target="_blank">
+        <img class="sm:w-[40vw] lg:w-[30vw] w-[80vw] rounded-[inherit]" src="./images/cover1.png">
+        <img class="absolute bottom-1 right-1 p-1 rounded-full bg-black/30 pointer-events-none" width="32" src="./images/link_arrow.svg">
+      </a>
+    </div>
+    <h1 class="text-center text-2xl font-medium text-white" id="more">
       画廊
-    </p>
+    </h1>
     <div
       class="grid w-full grid-cols-1 grid-rows-8 p-2 sm:grid-cols-1 sm:grid-rows-8 sm:p-4 md:grid-cols-2 md:grid-rows-4 md:p-2 lg:grid-cols-4 lg:grid-rows-2 lg:p-6">
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2f36118c6.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2f3577bf2.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2f34dc3b4.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2ed10a383.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2ed0030d1.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2ed07ee3f.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2ecf19123.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
       <img src="https://img.fastmirror.net/s/2024/09/19/66ec2ece8e2b9.jpg" alt=""
-        class="block rounded-3xl border-transparent p-4" />
+        class="block rounded-3xl border-transparent p-4 hover:scale-105 transition ease-out" />
     </div>
     <div class="flex justify-center">
       <a href="https://www.123pan.com/s/O3CyVv-q8bLH" rel="noopener norefferrer"
@@ -138,7 +148,7 @@
       <div
         class="bg-dark-75 flex h-full flex-row items-center justify-between border-t-2 border-gray-800 p-5 text-white">
         <header class="flex w-full flex-col gap-3 sm:w-[60%]">
-          <img src="tacs.svg" class="size-16" alt="" />
+          <img src="./images/tacs.svg" class="size-16" alt="TACS Logo" />
           <p class="text-sm">
             COPYRIGHT 2022 - 2024 TACS. ALL RIGHTS RESERVED.
           </p>
