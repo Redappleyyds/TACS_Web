@@ -15,7 +15,7 @@
 
 <body>
   <!-- 导航栏 -->
-  <nav class="backdrop-blur-xl fixed w-screen z-50 bg-[#1f2937]/75">
+  <nav class="backdrop-blur-xl fixed w-screen z-50 bg-[#1f2937]/75 desktop-navbar hidden md:block">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-12">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:justify-start">
@@ -26,20 +26,71 @@
               <li>
                <a href="" class="relative block rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white ml-4 text-nowrap select-none">首页</a>
               </li>
-        <!--Regular Link-->
               <li>
                 <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">文档</a>
               </li>
-        <!--Toggleable Link-->
+              <li>
+                <a href="https://online.tacserver.top/status/tacs" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">在线状态</a>
+              </li>
+              <li>
+                <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS ToDoList</a>
+              </li>
+              <li>
+                <a href="https://music.tacserver.top/" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS音乐</a>
+              </li>
+              <li>
+                <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-sm font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS百科</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-  <!-- 导航栏 -->
+
+  <!-- 移动端导航栏 -->
+  <nav class="backdrop-blur-2xl fixed w-screen z-50 bg-[#1f2937]/75 mobile-navbar block md:hidden">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="flex flex-1 items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="size-12 my-auto" src="./images/tacs.svg" alt="TACS Logo">
+          </div>
+          <input class="navbar-menu hidden" type="checkbox" value="selected" id="menu">
+          <h2 class="text-white text-2xl font-semibold">TAC-Server</h2>
+          <label for="menu">
+            <img src="./images/menu_arrow.svg" class="size-12 rotate-0 navbar-menu:rotate-180 transition duration-200 ease-in-out">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-menu:block transition-all duration-200 ease-in-out">
+      <ul class="flex flex-col gap-4 mt-4">
+        <li>
+         <a href="" class="relative block rounded-md bg-gray-900 px-3 py-2 text-2xl font-medium text-white ml-4 text-nowrap select-none">首页</a>
+        </li>
+        <li>
+          <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">文档</a>
+        </li>
+        <li>
+          <a href="https://online.tacserver.top/status/tacs" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">在线状态</a>
+        </li>
+        <li>
+          <a href="https://todo.tacserver.top/" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS ToDoList</a>
+        </li>
+        <li>
+          <a href="https://music.tacserver.top/" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS音乐</a>
+        </li>
+        <li>
+          <a href="https://wiki.tacserver.top/wiki/%E9%A6%96%E9%A1%B5" class="relative block rounded-md px-3 py-2 text-2xl font-medium text-white transition ease-out hover:bg-gray-700 hover:text-white my-auto ml-4 text-nowrap select-none">TACS百科</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
 
   <section
-    class="flex items-center justify-center h-screen sm:bg-[url('https://img.fastmirror.net/s/2024/10/05/67013db185987.png')] bg-center bg-cover bg-[#0f0f0f] bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30%"
+    class="flex items-center justify-center h-screen sm:bg-[url('https://img.fastmirror.net/s/2024/10/05/67013db185987.png')] bg-center bg-cover bg-fixed bg-[#0f0f0f] bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30%"
     id="intro">
     <div class="m-8 flex items-center justify-center">
       <div
@@ -140,6 +191,6 @@
     </footer>
   </section>
 </body>
-
+<script type="text/javascript" src="./main.js"></script>
 </html>
 <!-- 使用TailwindCSS编写 -->

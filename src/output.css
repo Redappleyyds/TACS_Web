@@ -503,6 +503,9 @@ video {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -545,6 +548,9 @@ video {
 .ml-4 {
   margin-left: 1rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .block {
   display: block;
 }
@@ -556,6 +562,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .size-12 {
   width: 3rem;
@@ -611,6 +620,11 @@ video {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
+.rotate-0 {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 @keyframes bounce {
 
   0%, 100% {
@@ -660,6 +674,9 @@ video {
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .self-end {
   align-self: flex-end;
@@ -778,6 +795,9 @@ video {
 .bg-cover {
   background-size: cover;
 }
+.bg-fixed {
+  background-attachment: fixed;
+}
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -806,6 +826,10 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -857,6 +881,9 @@ video {
 .font-medium {
   font-weight: 500;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .text-\[\#ffbb1b\] {
   --tw-text-opacity: 1;
   color: rgba(255, 187, 27, 1);
@@ -891,6 +918,13 @@ video {
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
 }
+.backdrop-blur-2xl {
+  --tw-backdrop-blur: blur(40px);
+  -webkit-backdrop-filter: blur(40px) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: blur(40px) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
 .backdrop-blur-xl {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: blur(24px) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -911,6 +945,14 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
 }
 .duration-300 {
   transition-duration: 300ms;
@@ -938,54 +980,29 @@ html {
 /* :root {
   font-family: "MiSans VF", MiSans, system-ui, sans-serif;
 } */
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––
-    Based on: https://codepen.io/nickelse/pen/YGPJQG
-    Influenced by: https://sproutsocial.com/
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
-  /* .mega-menu {
-    display: none;
-    right: 0;
-    top: 100%;
-    position: absolute;
+  .navbar-menu:checked ~ label .navbar-menu\:rotate-180 {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(180deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  
+  .navbar-menu\:block {
+    height: 0; /* 初始高度为 0 */
+    overflow: hidden; /* 防止内容溢出 */
+    opacity: 0; /* 初始透明度为 0 */
   }
 
-
-
-  .toggleable > label:after {
-    content: "\25BC";
-  } 
-
-  .toggle-input {
-    display: none;
+  .navbar-menu\:block.visible {
+    height: calc(100vh - 64px); /* 目标高度 */
+    opacity: 1; /* 完全不透明 */
   }
-  .toggle-input ~ label .mega-menu{
-    display: none;
-  }
-  .toggle-input:not(checked) ~ label .mega-menu {
-    display: none;
-  }
-  .toggle-input:checked ~ label .mega-menu {
-    display: block;
-  }
-
-  .toggle-input:checked + label {
-    color: white;
-    background: #374151;
-  }
-
-  .toggle-input:checked ~ label:after {
-    content: "\25B2";
-  } */
-
 
   .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), -0.25rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 
   .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
@@ -994,11 +1011,9 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-
   .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
-
 
   .hover\:border-white:hover {
   --tw-border-opacity: 1;
@@ -1006,13 +1021,11 @@ html {
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 
-
   .hover\:bg-\[\#1a2a6d\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(26, 42, 109, 1);
   background-color: rgba(26, 42, 109, var(--tw-bg-opacity));
 }
-
 
   .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
@@ -1020,13 +1033,11 @@ html {
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
-
   .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgba(59, 130, 246, 1);
   color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
-
 
   .hover\:text-white:hover {
   --tw-text-opacity: 1;
@@ -1034,11 +1045,9 @@ html {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-
   .hover\:underline:hover {
   text-decoration-line: underline;
 }
-
 
   .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -1047,30 +1056,25 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
 }
 
-
   .hover\:shadow-\[\#2d446e\]:hover {
   --tw-shadow-color: #2d446e;
   --tw-shadow: var(--tw-shadow-colored);
 }
-
 
   .hover\:shadow-\[\#6626c4\]:hover {
   --tw-shadow-color: #6626c4;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-
   .hover\:shadow-blue-500:hover {
   --tw-shadow-color: #3b82f6;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-
   .hover\:shadow-purple-800:hover {
   --tw-shadow-color: #6b21a8;
   --tw-shadow: var(--tw-shadow-colored);
 }
-
 
   @media (min-width: 640px) {
 
@@ -1125,8 +1129,15 @@ html {
   }
 }
 
-
   @media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1152,7 +1163,6 @@ html {
     --footer-height: 3;
   }
 }
-
 
   @media (min-width: 1024px) {
 
