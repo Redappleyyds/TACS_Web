@@ -18,17 +18,14 @@ html {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-  /* #Mega Menu Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .mega-menu {
+  /* .mega-menu {
     display: none;
     right: 0;
     top: 100%;
     position: absolute;
   }
 
-  /* #toggle Class Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
   .toggleable > label:after {
     content: "\25BC";
@@ -49,9 +46,9 @@ html {
 
   .toggle-input:checked + label {
     color: white;
-    background: #374151; /*@apply bg-blue-800 */
+    background: #374151;
   }
 
   .toggle-input:checked ~ label:after {
     content: "\25B2";
-  }
+  } */
