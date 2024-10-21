@@ -7,6 +7,6 @@
     "tailwindcss": "^3.4.14"
   },
   "scripts": {
-    "dev":"postcss .\\src\\input.css -o .\\src\\output.css -w"
+    "dev": "sudo postcss ./src/input.css -o ./src/output.css -w"
   }
 }
