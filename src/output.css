@@ -530,6 +530,9 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.m-6 {
+  margin: 1.5rem;
+}
 .m-8 {
   margin: 2rem;
 }
@@ -571,9 +574,9 @@ video {
   width: 4rem;
   height: 4rem;
 }
-.size-4 {
-  width: 1rem;
-  height: 1rem;
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .h-16 {
   height: 4rem;
@@ -986,14 +989,13 @@ html {
   
   .navbar-menu\:block {
     will-change: max-height, opacity; /* 提升这两个属性的性能 */
-    max-height: 0;
-    min-height: 0; /* 初始高度为 0 */
+    height: 0; /* 初始高度为 0 */
     overflow: hidden; /* 防止内容溢出 */
     opacity: 0; /* 初始透明度为 0 */
   }
 
   .navbar-menu\:block.visible {
-    min-height: calc(100vh - 64px); /* 目标高度 */
+    height: calc(100vh - 64px); /* 目标高度 */
     opacity: 1; /* 完全不透明 */
   }
 
@@ -1101,8 +1103,8 @@ html {
     justify-content: flex-start;
   }
 
-  .sm\:bg-\[url\(\'https\:\/\/img\.fastmirror\.net\/s\/2024\/10\/05\/67013db185987\.png\'\)\] {
-    background-image: url('https://img.fastmirror.net/s/2024/10/05/67013db185987.png');
+  .sm\:bg-\[url\(\'https\:\/\/img\.fastmirror\.net\/s\/2024\/10\/20\/6714d0d5256c4\.png\'\)\] {
+    background-image: url('https://img.fastmirror.net/s/2024/10/20/6714d0d5256c4.png');
   }
 
   .sm\:p-12 {

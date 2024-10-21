@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log(`
+      _________   ______                                   
+     /_  __/   | / ____/    ________  ______   _____  _____
+      / / / /| |/ /  ______/ ___/ _ \\/ ___/ | / / _ \\/ ___/
+     / / / ___ / /__/_____(__  )  __/ /   | |/ /  __/ /    
+    /_/ /_/  |_\\____/    /____/\\___/_/    |___/\\___/_/    
+    ---------------------------------------------------------
+    © 𝟮𝟬𝟮𝟰 𝙍𝙚𝙙𝙖𝙥𝙥𝙡𝙚_𝙤𝙣𝙚. 𝘼𝙡𝙡 𝙧𝙞𝙜𝙝𝙩𝙨 𝙧𝙚𝙨𝙚𝙧𝙫𝙚𝙙.                                               
+    `)
     const menuToggle = document.querySelector('input.navbar-menu');
     const navbarMenuBlock = document.querySelector('.navbar-menu\\:block');
     const mobileNavbar = document.querySelector('.mobile-navbar');

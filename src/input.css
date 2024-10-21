@@ -21,13 +21,12 @@ html {
   
   .navbar-menu\:block {
     will-change: max-height, opacity; /* 提升这两个属性的性能 */
-    max-height: 0;
-    min-height: 0; /* 初始高度为 0 */
+    height: 0; /* 初始高度为 0 */
     overflow: hidden; /* 防止内容溢出 */
     opacity: 0; /* 初始透明度为 0 */
   }
 
   .navbar-menu\:block.visible {
-    min-height: calc(100vh - 64px); /* 目标高度 */
+    height: calc(100vh - 64px); /* 目标高度 */
     opacity: 1; /* 完全不透明 */
   }
